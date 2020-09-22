@@ -24,20 +24,22 @@ public class Exercicio6 {
             int op = sc.nextInt();
             
             System.out.print("Nome..: ");
-            sc.next();
+            sc = new Scanner(System.in);
             String nome = sc.nextLine();
             System.out.print("Valor.: ");
+            sc = new Scanner(System.in);
             double valor = sc.nextDouble();
             
             if(op == 1) {
                 System.out.print("Entre com ISBN..: ");
-                sc.next();
+                sc = new Scanner(System.in);
                 String ISBN = sc.nextLine();
                 Livro l = new Livro(nome,valor,ISBN);
                 p[i] = l;
             }
             else {
                 System.out.print("Entre com SN..: ");
+                sc = new Scanner(System.in);
                 sc.next();
                 String SN = sc.nextLine();
                 DVD d = new DVD(nome, valor, SN);
