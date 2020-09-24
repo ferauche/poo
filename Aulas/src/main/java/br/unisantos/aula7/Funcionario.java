@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.unisantos.br.aula5;
+package br.unisantos.aula7;
 
 /**
  *
  * @author ferauche
  */
-public abstract class Funcionario {
+public abstract class Funcionario implements Autenticavel {
     
     protected String nome;
     protected String cpf;
@@ -59,6 +59,8 @@ public abstract class Funcionario {
         this.senha = senha;
     }
     
+    
+    @Override
     public boolean autenticar(int pwd) {
         boolean pass = false;
         

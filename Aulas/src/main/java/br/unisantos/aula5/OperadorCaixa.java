@@ -3,9 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.unisantos.br.aula7;
-
-import br.unisantos.br.aula5.*;
+package br.unisantos.aula5;
 
 /**
  *

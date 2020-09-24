@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.unisantos.br.aula2;
+package br.unisantos.aula2;
 
 /**
  *
@@ -11,9 +11,9 @@ package br.unisantos.br.aula2;
  */
 public class Carro {
     
-    float tanque = 0;
-    float odometro = 0;
-    float consumoMedio = 0;
+    private float tanque = 0;
+    private float odometro = 0;
+    private float consumoMedio = 0;
     
     public Carro() {
         
@@ -23,6 +23,11 @@ public class Carro {
         this.consumoMedio = consumo;
         this.tanque = 40;
     }
+     
+    public Carro(float consumo, float tanque) {
+        this.consumoMedio = consumo;
+        this.tanque = tanque;
+    }
     
     public void setarVelocidade(float vm, float tempo) {
         float distancia =  vm * tempo;
@@ -30,6 +35,22 @@ public class Carro {
         
         this.odometro += distancia;
         this.tanque -= litros;
+    }
+    
+    public float getTanque() {
+        return this.tanque;
+    }
+
+    public float getOdometro() {
+        return odometro;
+    }
+
+    public float getConsumoMedio() {
+        return consumoMedio;
+    }
+        
+    public void setConsumoMedio(float consumo) {
+        this.consumoMedio = consumo;
     }
     
 }
