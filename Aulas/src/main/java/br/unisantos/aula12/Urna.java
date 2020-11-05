@@ -17,6 +17,7 @@ public class Urna {
     private Vector<Integer> votos;
     private int eleitores;
     
+    //alterar o construtor para receber uma lista de candidatos
     public Urna(int eleitores) {
         this.eleitores = eleitores;
         candidatos = new Vector<Candidato>();
