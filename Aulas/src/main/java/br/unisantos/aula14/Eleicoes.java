@@ -96,8 +96,6 @@ public class Eleicoes {
         Iterator<Candidato> it = lista.iterator();
         while(it.hasNext()) {
             Candidato c = it.next();
-            System.out.println(c.getNome());
-            System.out.println(c.getNumero());
             if(c.getNumero() == num) {
                 it.remove();
                 removeu = true;
