@@ -25,10 +25,10 @@ public class Eleicoes {
             try {
                 System.out.println("ELEICOES 2021 - PREFEITURA FICTICIA");
                 System.out.println("====================================");
-                System.out.print("Digitie o numero o candidato: ");
+                System.out.println("Digitie o numero o candidato ");
                 int op = sc.nextInt();
                 Candidato c = urna.getCandidato(op);
-                System.out.print("Deseja votar no "+c.getNome()+" (S/N)?");
+                System.out.println("Deseja votar no "+c.getNome()+" (S/N)?");
                 String resposta = sc.next();
                 if(resposta.equals("S")) {
                     urna.inserirVoto(op);
