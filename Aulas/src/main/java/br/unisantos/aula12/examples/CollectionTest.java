@@ -20,8 +20,6 @@ public class CollectionTest {
         List<String> list = new ArrayList<String> ();
         List<String> removeList = new ArrayList<String> ();
         
-        
-        
         for(String c : colors) {
             list.add(c);
         }
@@ -38,6 +36,7 @@ public class CollectionTest {
         removeColors(list, removeList);
         System.out.println();
         System.out.print("Conteúdo após a remoção:");
+        
         Iterator it = list.iterator();
         while(it.hasNext()) {
             System.out.print(" "+it.next());

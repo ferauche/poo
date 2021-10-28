@@ -43,17 +43,16 @@ public class CollectionTest2 {
     }
     
     private void converterParaMaiusculo(List<String> lista) {
-       for(int i=0; i<lista.size();i++) {
+       /*for(int i=0; i<lista.size();i++) {
            String cor = lista.get(i);
            lista.set(i, cor.toUpperCase());
        }
+       */
        
-       /*
        for(String c : lista) {
             int idx = lista.indexOf(c);
             lista.set(idx,c.toUpperCase());  
        }
-        */
     }
     
     private void removerItens(List<String> lista, int inicio, int fim) {
