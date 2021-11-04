@@ -7,7 +7,7 @@ package br.unisantos.aula12_sol;
 public class Candidato implements Comparable<Candidato> {
     
     private String nome;
-    private int numero;
+    private int numero = 0;
     private int totalVotos;
     
     public Candidato() {
