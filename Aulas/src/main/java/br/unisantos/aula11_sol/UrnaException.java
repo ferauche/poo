@@ -18,6 +18,7 @@ public class UrnaException extends Exception {
     
     public UrnaException(String msg, int cod_erro) {
         super(msg);
+        this.cod_erro = cod_erro;
     }
 
     public int getCod_erro() {
