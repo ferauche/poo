@@ -13,12 +13,12 @@ import java.util.*;
  */
 public class Urna {
     
-    private List<Candidato> candidatos;
+    private LinkedList<Candidato> candidatos;
     private List<Integer> votos;
     private int eleitores;
     
     //alterar o construtor para receber uma lista de candidatos
-    public Urna(int eleitores, List candidatos) {
+    public Urna(int eleitores, LinkedList candidatos) {
         this.eleitores = eleitores;
         this.candidatos = candidatos;
         
@@ -48,10 +48,10 @@ public class Urna {
         Deve retorna o atributo candidatos, sem os candidatos de conrole de início e fim da lista
         */  
         //removendo o primeiro objeto 0 de controle
-        Candidato cand = this.candidatos.get(0);
+        Candidato cand = this.candidatos.getFirst();
         this.candidatos.remove(cand);
         //removendo o último objeto de controle
-        cand = this.candidatos.get(candidatos.size()-1);
+        cand = this.candidatos.getLast();
         this.candidatos.remove(cand);
         
         for(Candidato c : this.candidatos) {
